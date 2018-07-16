@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+h2, h1, h3, h4, p {
+    margin: 0;
+}
+.page {
+    font: 300 17px/1.58 'Raleway', Arial, sans-serif;
+}
+
+.section {
+    padding: 44px 11%;
+}
+
+.navigation {
+    margin-bottom: 260px;
+}
+
+.button {
+    height: 50px;
+    width: 180px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    box-shadow:  0 1px 1px 1px grey;
+}
+
+.header {
+    background: url("../img/fresh.jpg") 50% no-repeat;
+    background-size: cover;
+    height: 813px;
+    position: relative;
+}
+
+.header__logo {
+    height: 47px;
+    float: left;
+    display: block;
+}
+
+.header__navigation {
+    float: right;
+    display: block;
+    padding-top: 10px;
+
+}
+
+.header__navigation--el {
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 31px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.header__navigation--el:active {
+    border-top: 3px solid #ff6033;
+}
+
+.header__info {
+    width: 34%;
+    text-align: left;
+}
+
+.header__info--title {
+    color: #262626;
+    font-size: 54px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.header__info--text {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 29px;
+}
+.header__info--button {
+    background: #ff6033;
+}
+
+.header__scroll {
+    position: absolute;
+    bottom: 7.1%;
+    cursor: pointer;
+    left: 49.3%;
+    width: 1.5%;
+    height: 35px;
+}
+
+.header__scroll:hover {
+    bottom: 8%;
+    opacity: 0.8;
+}
