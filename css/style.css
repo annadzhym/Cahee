@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 
-h2, h1, h3, h4, p {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 .page {
@@ -8,7 +8,7 @@ h2, h1, h3, h4, p {
 }
 
 .section {
-    padding: 44px 11%;
+
 }
 
 .navigation {
@@ -22,6 +22,11 @@ h2, h1, h3, h4, p {
     text-transform: uppercase;
     color: white;
     box-shadow:  0 1px 1px 1px grey;
+    opacity: 0.8;
+}
+
+.button:hover {
+   opacity: 1;
 }
 
 .header {
@@ -29,6 +34,7 @@ h2, h1, h3, h4, p {
     background-size: cover;
     height: 813px;
     position: relative;
+    padding: 44px 11%;
 }
 
 .header__logo {
@@ -91,4 +97,109 @@ h2, h1, h3, h4, p {
 .header__scroll:hover {
     bottom: 8%;
     opacity: 0.8;
+}
+
+.about {
+    background-color: #00c4c4;
+    height: 565px;
+    color: white;
+    padding: 33px 100px;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: row;
+}
+
+.about__info--image {
+    height: 581px;
+    width: 586px;
+}
+
+.about__info--column {
+    padding: 0 50px 100px 65px;
+    flex-direction: column;
+}
+
+.about__info--title {
+    padding-top: 97px;
+    font-size: 81px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.about__info--text {
+    margin-top: -5px;
+}
+
+.about__info--text p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.services {
+    background-color:  #70bfff;
+    padding: 100px 0 119px;
+}
+
+.services__filling {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.services__title {
+    font-size: 78px;
+    color: #fff;
+    padding: 167px 0 200px 40px;
+    background: url(../img/tomato.png) no-repeat 30%;
+    background-size: 386px;
+}
+
+.services__list {
+    list-style: none;
+    padding: 35px 0 0 164px;
+    margin: 0;
+}
+
+.list__item {
+    background-color: #ffffff;
+    height: 90px;
+    margin-top: 20px;
+    width: 356px;
+    text-align: center;
+}
+
+.list__item:first-child {
+    margin: 0;
+}
+
+.list__item--title{
+    display: inline-block;
+    font-size: 17px;
+}
+
+.list__icon {
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    float: right;
+    background: 50% no-repeat;
+    border-left: 1px solid #9D9D9D;
+    vertical-align: middle;
+}
+
+.list__icon--cart{
+    background-image: url(../img/icons/icon-cart.svg);
+}
+.list__icon--globe{
+    background-image: url(../img/icons/icon-globe.svg);
+}
+.list__icon--quality{
+    background-image: url(../img/icons/icon-quality.svg);
+}
+.list__icon--carrot{
+    background-image: url(../img/icons/icon-carrot.svg);
 }
