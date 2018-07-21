@@ -254,6 +254,24 @@
     margin: 0 auto;
 }
 
+.pictures {
+    position: relative;
+}
+
+.pictures__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: greenyellow;
+    opacity: 0;
+}
+
+.pictures__mask:hover {
+    opacity: 0.7;
+    cursor: zoom-in;
+}
 .pictures__peach {
     width: 692px;
 }
