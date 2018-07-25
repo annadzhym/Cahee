@@ -457,6 +457,7 @@
 .contact__form:focus {
     border-left: 6px solid #355b82;
     width: 442px;
+    text-indent: 12px;
 }
 
 .contact__form--message {
