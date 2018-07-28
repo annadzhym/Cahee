@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
-
+@media screen and (max-width: 750px){
+    .container {
+        width: 100%;
+    }
+    .blog-flex {
+        flex-direction: column;
+    }
+}
 .page {
     font: 300 17px/1.58 'Raleway', Arial, sans-serif;
 }
@@ -26,6 +33,12 @@
 
 .titles {
     font-weight: 700;
+}
+
+.fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -143,50 +156,54 @@
 }
 
 .services__filling {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: space-around;
     height: 652px;
+}
+
+.services__filling--right {
+    height: 527px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/tomato.png) no-repeat 100%;
 }
 
 .services__title {
     font-size: 78px;
     color: #fff;
-    padding: 159px 0 243px;
-    background: url(../img/tomato.png) no-repeat 30%;
 }
 
+.list {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
 .list__item {
     background-color: #ffffff;
-    height: 90px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.list__item:last-child {
-    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 341px;
 }
 
 .list__item--link {
     color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    width: 75%;
 }
 
 .list__item--link:hover {
     opacity: 0.7;
 }
 
-.list__item--title{
-    display: inline-block;
-    font-weight: 700;
-    margin-top: 25px;
-    width: 250px;
-}
-
 .list__icon {
     height: 90px;
-    width: 90px;
-    float: right;
+    width: 25%;
     background: 50% no-repeat;
     border-left: 1px solid #9D9D9D;
 }
